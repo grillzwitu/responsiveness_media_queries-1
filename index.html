@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+    <title>A Responsive HTML Page</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="container"></div>
+
+        <div class="left-half">
+
+            <h1>Learn to code by <br>watching others</h1>
+
+            <p>
+                See how experienced developers solve problems in real time.
+                Watching scripted tutorials is great, but understanding how
+                developers think is invaluable.
+            </p>
+
+        </div>
+
+        <div class="right-half">
+
+            <div class="info-container">
+                <p>
+                    <strong>Try it free for 7 days</strong> then $20/mo. thereafter
+                </p>
+            </div>
+
+            <form>
+                <input id="firstname" type="text" placeholder="First Name" required/>
+                <img id="first_name_warning" class="invalid-warning" src="./assets/images/icon-error.svg">
+                <label id="first_name_label" for="firstName">first name cannot be empty</label>
+                
+                <input id="lastname" type="text" placeholder="Last Name" required/>
+                <img id="last_name_warning" class="invalid-warning" src="./assets/images/icon-error.svg">
+                <label id="lastname_label" for="lastName">last name cannot be empty</label>
+                
+                
+                <input id="email" type="email" placeholder="Email Address" required/>
+                <img id="email_warning" class="invalid-warning" src="./assets/images/icon-error.svg">
+                <label id="email_label" for="email">Looks like this is not an email</label>
+                
+                <input id="password" type="password" placeholder="Password" required/>
+                <img id="password_warning" class="invalid-warning" src="./assets/images/icon-error.svg">
+                <label id="password_label" for="password">Password cannot be empty</label>
+                
+
+                <button class="submit-btn" type="submit">CLAIM YOUR FREE TRAIL</button>
+
+                <p>By clicking on the button you are agreeing to our <span>Terms and Conditions</span></p>
+            </form>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>

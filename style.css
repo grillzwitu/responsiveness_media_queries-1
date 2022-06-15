@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    margin: 60px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins, serif;
+    gap: 30px;
+}
+
+.left-half{
+    width: 30%;
+    display: grid;
+    grid-template-rows: 4fr;
+    color: white;    
+}
+
+.left-half h1 {
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.left-half p {
+    font-weight: 400;
+    margin: 30px 0 0;
+    font-size: 0.8em;
+}
+
+.right-half {
+    width: 40%;
+    display: grid;
+    grid-template-rows: 4fr;
+}
+
+.info-container {
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(249, 68%, 27%);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.575) 0px 12px 5px -7px;
+
+}
+
+.right-half p{
+    color: white;
+    font-family: poppins, serif;
+    font-weight: 400;
+    font-size: .7em;
+}
+
+.right-half form {
+    margin: 20px 0 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.575) 0px 12px 5px -7px;
+    padding: 40px 30px;
+}
+
+.right-half form input{
+    width: 100%;
+    background: transparent;
+    padding: 12px;
+    border-color: rgba(128, 128, 128, 0.411);
+    border-radius: 5px;
+    margin: 0 0 0px 0;
+}
+
+.right-half form img {
+    float: right;
+    transform: translate(-15px, -35px);
+    visibility: hidden;
+}
+
+.right-half form label {
+    color:hsl(0, 100%, 74%);
+    font-size: 0.7em;
+    float: right;
+    visibility: hidden;
+    transform: translate(22px, 0);
+}
+
+.red_placeholder::-webkit-input-placeholder {
+    color: hsl(0, 100%, 74%);
+}
+
+.right-half form button {
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    border-color: hsl(154, 59%, 51%);
+    padding: 12px 0;
+    border-radius: 5px;
+    color: white;
+    font-family: poppins, serif;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    cursor: pointer;
+}
+
+.right-half form p {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+
+.right-half form p span {
+    color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 750px) {
+    main {
+        flex-direction: column;
+        margin: 15px 0 35px 0;
+        gap: 45px;
+    }
+
+    .left-half {
+        width: 70%;
+        text-align: center;
+    }
+
+    .right-half {
+        width: 80%;
+    }
+}
