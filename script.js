@@ -20,6 +20,7 @@ const checkvalidity = () => {
         if (ele.value === '') {
             ele.nextElementSibling.style.visibility = 'visible';
             ele.nextElementSibling.nextElementSibling.style.visibility = 'visible';
+            ele.style.borderColor = "hsl(0, 100%, 74%)"
 
             if (ele === email) {
                 email.setAttribute("placeholder", "email@example/com");
@@ -28,6 +29,7 @@ const checkvalidity = () => {
         } else {
             ele.nextElementSibling.style.visibility = 'hidden';
             ele.nextElementSibling.nextElementSibling.style.visibility = 'hidden';
+            ele.style.borderColor = null
 
             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
                 return true;
@@ -35,6 +37,9 @@ const checkvalidity = () => {
             else {
                 email.setAttribute("placeholder", "email@example/com");
                 email.classList.add('red_placeholder');
+                email.style.borderColor = "hsl(0, 100%, 74%)"
+                email.nextElementSibling.style.visibility = 'visible';
+                email.nextElementSibling.nextElementSibling.style.visibility = 'visible';
             }
         }
     });
