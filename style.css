@@ -19,11 +19,11 @@ main {
     justify-content: center;
     align-items: center;
     font-family: poppins, serif;
-    gap: 30px;
+    gap: 5%;
 }
 
 .left-half{
-    width: 30%;
+    width: 33%;
     display: grid;
     grid-template-rows: 4fr;
     color: white;    
